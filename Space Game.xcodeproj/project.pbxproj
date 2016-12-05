@@ -15,6 +15,10 @@
 		F24FE41A1DF586E0007D5C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24FE4181DF586E0007D5C27 /* Main.storyboard */; };
 		F24FE41C1DF586E0007D5C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24FE41B1DF586E0007D5C27 /* Assets.xcassets */; };
 		F24FE41F1DF586E0007D5C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24FE41D1DF586E0007D5C27 /* LaunchScreen.storyboard */; };
+		F24FE4281DF5937B007D5C27 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F24FE4261DF5937B007D5C27 /* bgmusic.mp3 */; };
+		F24FE4291DF5937B007D5C27 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F24FE4271DF5937B007D5C27 /* torpedo.mp3 */; };
+		F24FE42C1DF5C56E007D5C27 /* VectorArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FE42B1DF5C56E007D5C27 /* VectorArithmetic.swift */; };
+		F24FE42E1DF5D1AF007D5C27 /* GameEndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FE42D1DF5D1AF007D5C27 /* GameEndScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		F24FE41B1DF586E0007D5C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F24FE41E1DF586E0007D5C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24FE4201DF586E0007D5C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24FE4261DF5937B007D5C27 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
+		F24FE4271DF5937B007D5C27 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		F24FE42B1DF5C56E007D5C27 /* VectorArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorArithmetic.swift; sourceTree = "<group>"; };
+		F24FE42D1DF5D1AF007D5C27 /* GameEndScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEndScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,29 @@
 		F24FE40D1DF586E0007D5C27 /* Space Game */ = {
 			isa = PBXGroup;
 			children = (
+				F24FE42A1DF59380007D5C27 /* sounds */,
 				F24FE40E1DF586E0007D5C27 /* AppDelegate.swift */,
 				F24FE4101DF586E0007D5C27 /* GameScene.sks */,
 				F24FE4121DF586E0007D5C27 /* Actions.sks */,
 				F24FE4141DF586E0007D5C27 /* GameScene.swift */,
+				F24FE42D1DF5D1AF007D5C27 /* GameEndScene.swift */,
 				F24FE4161DF586E0007D5C27 /* GameViewController.swift */,
+				F24FE42B1DF5C56E007D5C27 /* VectorArithmetic.swift */,
 				F24FE4181DF586E0007D5C27 /* Main.storyboard */,
 				F24FE41B1DF586E0007D5C27 /* Assets.xcassets */,
 				F24FE41D1DF586E0007D5C27 /* LaunchScreen.storyboard */,
 				F24FE4201DF586E0007D5C27 /* Info.plist */,
 			);
 			path = "Space Game";
+			sourceTree = "<group>";
+		};
+		F24FE42A1DF59380007D5C27 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F24FE4261DF5937B007D5C27 /* bgmusic.mp3 */,
+				F24FE4271DF5937B007D5C27 /* torpedo.mp3 */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,11 +153,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24FE4291DF5937B007D5C27 /* torpedo.mp3 in Resources */,
 				F24FE41A1DF586E0007D5C27 /* Main.storyboard in Resources */,
 				F24FE4111DF586E0007D5C27 /* GameScene.sks in Resources */,
 				F24FE41C1DF586E0007D5C27 /* Assets.xcassets in Resources */,
 				F24FE41F1DF586E0007D5C27 /* LaunchScreen.storyboard in Resources */,
 				F24FE4131DF586E0007D5C27 /* Actions.sks in Resources */,
+				F24FE4281DF5937B007D5C27 /* bgmusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24FE4151DF586E0007D5C27 /* GameScene.swift in Sources */,
+				F24FE42E1DF5D1AF007D5C27 /* GameEndScene.swift in Sources */,
 				F24FE4171DF586E0007D5C27 /* GameViewController.swift in Sources */,
+				F24FE42C1DF5C56E007D5C27 /* VectorArithmetic.swift in Sources */,
 				F24FE40F1DF586E0007D5C27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6L3QQEK882;
 				INFOPLIST_FILE = "Space Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thamil.Space-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6L3QQEK882;
 				INFOPLIST_FILE = "Space Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thamil.Space-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
